@@ -9,3 +9,7 @@
 * `Dinamiche Aziendali srl <https://www.dinamicheaziendali.it>`_:
 
   * Giuseppe Borruso <gborruso@dinamicheaziendali.it>
+
+* `Pesol <https://www.pesol.es>`__:
+
+  * Pedro Evaristo Gonzalez Sanchez <pedro.gonzalez@pesol.es>
