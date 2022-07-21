@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="sale_order_additional_page_view_form" model="ir.ui.view">
+        <field name="name">sale.order.additional.page.form</field>
+        <field name="model">sale.order.additional.page</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <div class="oe_title">
+                        <label for="name" />
+                        <h1>
+                            <field name="name" />
+                        </h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="type" />
+                            <field name="sequence" readonly="1" />
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Description" name="description_html">
+                            <field
+                                name="description_html"
+                                widget="html"
+                                class="oe-bordered-editor"
+                                options="{'style-inline': true, 'codeview': true}"
+                            />
+                        </page>
+                        <page string="Preview" name="preview_html">
+                            <group>
+                                <group>
+                                    <field name="sample_sale_id" />
+                                </group>
+                            </group>
+                            <field
+                                name="preview_html"
+                                widget="html"
+                                nolabel="1"
+                                options="{'safe': True}"
+                            />
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="sale_order_additional_page_view_tree" model="ir.ui.view">
+        <field name="name">sale.order.additional.page.tree</field>
+        <field name="model">sale.order.additional.page</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="sequence" widget="handle" />
+                <field name="name" />
+                <field name="type" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="sale_order_additional_page_action" model="ir.actions.act_window">
+        <field name="name">Sales Additional Pages</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">sale.order.additional.page</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem
+        id="sale_order_additional_page_menu"
+        name="Sales Additional Pages"
+        action="sale_order_additional_page_action"
+        parent="sale.menu_sales_config"
+        sequence="99"
+        groups="sales_team.group_sale_salesman"
+    />
+</odoo>

@@ -1,0 +1,200 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* sale_order_additional_page
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-07-21 20:34+0000\n"
+"PO-Revision-Date: 2022-07-21 20:34+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: sale_order_additional_page
+#: model:ir.model.fields,field_description:sale_order_additional_page.field_sale_order__additional_page_ids
+msgid "Additional Pages"
+msgstr "Páginas Adicionales"
+
+#. module: sale_order_additional_page
+#: model:ir.model.fields,field_description:sale_order_additional_page.field_sale_order_additional_page__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: sale_order_additional_page
+#: model:ir.model.fields,field_description:sale_order_additional_page.field_sale_order_additional_page__create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: sale_order_additional_page
+#: model:ir.model.fields,field_description:sale_order_additional_page.field_sale_order_additional_page__null_value
+msgid "Default Value"
+msgstr "Valor por Defecto"
+
+#. module: sale_order_additional_page
+#: model:ir.model.fields,field_description:sale_order_additional_page.field_sale_order_additional_page__description_html
+#: model_terms:ir.ui.view,arch_db:sale_order_additional_page.sale_order_additional_page_view_form
+msgid "Description"
+msgstr "Descripción"
+
+#. module: sale_order_additional_page
+#: model:ir.model.fields,field_description:sale_order_additional_page.field_sale_order_additional_page__display_name
+msgid "Display Name"
+msgstr "Nombre a Mostrar"
+
+#. module: sale_order_additional_page
+#: model:ir.model.fields,field_description:sale_order_additional_page.field_sale_order_additional_page__model_object_field
+msgid "Field"
+msgstr "Campo"
+
+#. module: sale_order_additional_page
+#: model:ir.model.fields,help:sale_order_additional_page.field_sale_order_additional_page__copyvalue
+msgid ""
+"Final placeholder expression, to be copy-pasted in the desired template "
+"field."
+msgstr ""
+
+#. module: sale_order_additional_page
+#: model:ir.model.fields.selection,name:sale_order_additional_page.selection__sale_order_additional_page__type__first
+msgid "First"
+msgstr "Primero"
+
+#. module: sale_order_additional_page
+#: model:ir.model.fields,field_description:sale_order_additional_page.field_sale_order_additional_page__id
+msgid "ID"
+msgstr ""
+
+#. module: sale_order_additional_page
+#: model:ir.model.fields,field_description:sale_order_additional_page.field_sale_order_additional_page__lang
+msgid "Language"
+msgstr "Lenguaje"
+
+#. module: sale_order_additional_page
+#: model:ir.model.fields.selection,name:sale_order_additional_page.selection__sale_order_additional_page__type__last
+msgid "Last"
+msgstr "Último"
+
+#. module: sale_order_additional_page
+#: model:ir.model.fields,field_description:sale_order_additional_page.field_sale_order_additional_page____last_update
+msgid "Last Modified on"
+msgstr "Última Modificación el"
+
+#. module: sale_order_additional_page
+#: model:ir.model.fields,field_description:sale_order_additional_page.field_sale_order_additional_page__write_uid
+msgid "Last Updated by"
+msgstr "Última Actualización por"
+
+#. module: sale_order_additional_page
+#: model:ir.model.fields,field_description:sale_order_additional_page.field_sale_order_additional_page__write_date
+msgid "Last Updated on"
+msgstr "Última Actualización el"
+
+#. module: sale_order_additional_page
+#: model:ir.model.fields,field_description:sale_order_additional_page.field_sale_order_additional_page__name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: sale_order_additional_page
+#: model:ir.model.fields,help:sale_order_additional_page.field_sale_order_additional_page__lang
+msgid ""
+"Optional translation language (ISO code) to select when sending out an "
+"email. If not set, the english version will be used. This should usually be "
+"a placeholder expression that provides the appropriate language, e.g. {{ "
+"object.partner_id.lang }}."
+msgstr ""
+
+#. module: sale_order_additional_page
+#: model:ir.model.fields,help:sale_order_additional_page.field_sale_order_additional_page__null_value
+msgid "Optional value to use if the target field is empty"
+msgstr ""
+
+#. module: sale_order_additional_page
+#: model:ir.model.fields,field_description:sale_order_additional_page.field_sale_order_additional_page__copyvalue
+msgid "Placeholder Expression"
+msgstr ""
+
+#. module: sale_order_additional_page
+#: model:ir.model.fields,field_description:sale_order_additional_page.field_sale_order_additional_page__preview_html
+#: model_terms:ir.ui.view,arch_db:sale_order_additional_page.sale_order_additional_page_view_form
+msgid "Preview"
+msgstr ""
+
+#. module: sale_order_additional_page
+#: model:ir.model.fields,field_description:sale_order_additional_page.field_sale_order_additional_page__render_model
+msgid "Rendering Model"
+msgstr "Modelo de Renderizado"
+
+#. module: sale_order_additional_page
+#: model:ir.model,name:sale_order_additional_page.model_sale_order_additional_page
+msgid "Sale Order Additional Page"
+msgstr "Pagina Adicional de Ventas"
+
+#. module: sale_order_additional_page
+#: model:ir.actions.act_window,name:sale_order_additional_page.sale_order_additional_page_action
+#: model:ir.ui.menu,name:sale_order_additional_page.sale_order_additional_page_menu
+msgid "Sales Additional Pages"
+msgstr "Pagina Adicional de Ventas"
+
+#. module: sale_order_additional_page
+#: model:ir.model,name:sale_order_additional_page.model_sale_order
+msgid "Sales Order"
+msgstr "Pedido de venta"
+
+#. module: sale_order_additional_page
+#: model:ir.model.fields,field_description:sale_order_additional_page.field_sale_order_additional_page__sample_sale_id
+msgid "Sample Sale"
+msgstr "Venta de Ejemplo"
+
+#. module: sale_order_additional_page
+#: model:ir.model.fields,help:sale_order_additional_page.field_sale_order_additional_page__model_object_field
+msgid ""
+"Select target field from the related document model.\n"
+"If it is a relationship field you will be able to select a target field at the destination of the relationship."
+msgstr ""
+
+#. module: sale_order_additional_page
+#: model:ir.model.fields,field_description:sale_order_additional_page.field_sale_order_additional_page__sequence
+msgid "Sequence"
+msgstr "Secuencia"
+
+#. module: sale_order_additional_page
+#: model:ir.model.fields,field_description:sale_order_additional_page.field_sale_order_additional_page__sub_model_object_field
+msgid "Sub-field"
+msgstr ""
+
+#. module: sale_order_additional_page
+#: model:ir.model.fields,field_description:sale_order_additional_page.field_sale_order_additional_page__sub_object
+msgid "Sub-model"
+msgstr ""
+
+#. module: sale_order_additional_page
+#: model:ir.model.fields,field_description:sale_order_additional_page.field_sale_order_additional_page__type
+msgid "Type"
+msgstr "Tipo"
+
+#. module: sale_order_additional_page
+#: model:ir.model.fields,help:sale_order_additional_page.field_sale_order_additional_page__type
+msgid ""
+"Use 'First' if you want the template to come before the sales report.\n"
+"Use 'Last' if you want the template to come after the sales report."
+msgstr ""
+"Utilice 'Primero' si desea que la plantilla aparezca antes del reporte de ventas.\n"
+"Utilice 'Último' si desea que la plantilla aparezca después del reporte de ventas."
+
+#. module: sale_order_additional_page
+#: model:ir.model.fields,help:sale_order_additional_page.field_sale_order_additional_page__sub_model_object_field
+msgid ""
+"When a relationship field is selected as first field, this field lets you "
+"select the target field within the destination document model (sub-model)."
+msgstr ""
+
+#. module: sale_order_additional_page
+#: model:ir.model.fields,help:sale_order_additional_page.field_sale_order_additional_page__sub_object
+msgid ""
+"When a relationship field is selected as first field, this field shows the "
+"document model the relationship goes to."
+msgstr ""

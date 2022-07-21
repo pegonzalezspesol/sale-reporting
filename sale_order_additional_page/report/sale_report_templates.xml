@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+<template
+        id="report_saleorder_document_inherit_additional_page"
+        inherit_id="sale.report_saleorder_document"
+    >
+    <xpath expr="t[@t-call='web.external_layout']" position="before">
+        <t t-foreach="doc.additional_page_ids" t-as="additional_page">
+            <t t-if="additional_page.type == 'first'">
+                <t t-call="web.external_layout">
+                    <span
+                            t-esc="additional_page.with_context(sale=doc.id)._get_rendered_additional_page()"
+                        />
+                </t>
+            </t>
+        </t>
+    </xpath>
+    <xpath expr="t[@t-call='web.external_layout']" position="after">
+        <t t-foreach="doc.additional_page_ids" t-as="additional_page">
+            <t t-if="additional_page.type == 'last'">
+                <t t-call="web.external_layout">
+                    <span
+                            t-esc="additional_page.with_context(sale=doc.id)._get_rendered_additional_page()"
+                        />
+                </t>
+            </t>
+        </t>
+    </xpath>
+</template>
+</odoo>
