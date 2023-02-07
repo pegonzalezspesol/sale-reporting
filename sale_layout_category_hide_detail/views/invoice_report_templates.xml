@@ -33,7 +33,7 @@
             />
     </xpath>
     <xpath
-            expr="//tbody[hasclass('invoice_tbody')]//tr[hasclass('is-subtotal', 'text-right')]"
+            expr="//tbody[hasclass('invoice_tbody')]//tr[hasclass('is-subtotal', 'text-end')]"
             position="attributes"
         >
       <attribute
@@ -43,7 +43,7 @@
             />
     </xpath>
     <xpath
-            expr="//tbody[hasclass('invoice_tbody')]//tr[hasclass('is-subtotal', 'text-right')]"
+            expr="//tbody[hasclass('invoice_tbody')]//tr[hasclass('is-subtotal', 'text-end')]"
             position="after"
         >
       <t t-if="not current_section.show_details">

@@ -46,6 +46,8 @@
                             },
                        }"
                     attrs="{'invisible': [('display_type', '!=', 'line_section')]}"
+                    readonly="1"
+                    force_save="1"
                 />
                 <field
                     name="show_section_subtotal"
@@ -62,6 +64,8 @@
                             },
                        }"
                     attrs="{'invisible': ['|', ('display_type', '!=', 'line_section'), ('display_type', '=', 'line_section'), ('show_details', '=', True)]}"
+                    readonly="1"
+                    force_save="1"
                 />
                 <field
                     name="show_subtotal"
@@ -78,6 +82,8 @@
                             },
                        }"
                     attrs="{'invisible': ['|', ('display_type', '!=', 'line_section'), ('show_details', '!=', True)]}"
+                    readonly="1"
+                    force_save="1"
                 />
                 <field
                     name="show_line_amount"
@@ -94,6 +100,8 @@
                             },
                        }"
                     attrs="{'invisible': ['|', ('display_type', '!=', 'line_section'), ('show_details', '!=', True)]}"
+                    readonly="1"
+                    force_save="1"
                 />
             </xpath>
             <xpath
@@ -104,7 +112,7 @@
                 <field name="show_subtotal" />
             </xpath>
             <xpath
-                expr="//field[@name='order_line']/kanban[hasclass('o_kanban_mobile')]//t[@t-esc='record.name.value']/../.."
+                expr="//field[@name='order_line']/kanban[hasclass('o_kanban_mobile')]//t[@t-out='record.name.value']/../.."
                 position="attributes"
             >
                 <attribute name="class" />
@@ -113,7 +121,7 @@
                 >col-#{record.display_type.raw_value === 'line_section' ? '10' : 12}</attribute>
             </xpath>
             <xpath
-                expr="//field[@name='order_line']/kanban[hasclass('o_kanban_mobile')]//t[@t-esc='record.name.value']/../.."
+                expr="//field[@name='order_line']/kanban[hasclass('o_kanban_mobile')]//t[@t-out='record.name.value']/../.."
                 position="after"
             >
                 <t t-if="record.display_type.raw_value === 'line_section'">

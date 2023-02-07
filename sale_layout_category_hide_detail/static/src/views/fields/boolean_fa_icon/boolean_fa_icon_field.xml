@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates id="template" xml:space="preserve">
+  <t t-name="sale_layout_category_hide_detail.BooleanFaIcon" owl="1">
+    <div
+            class="o_boolean_icon"
+            t-on-click.prevent.stop="() => props.update(!props.value)"
+        >
+      <a href="#">
+        <i
+                    class="fa"
+                    role="img"
+                    t-att-class="props.value ? props.faIcons.icon_true : props.faIcons.icon_false"
+                    t-att-title="props.value ? props.terminology.hover_true : props.terminology.hover_false"
+                    t-att-aria-label="props.value ? props.terminology.hover_true : props.terminology.hover_false"
+                />
+      </a>
+    </div>
+  </t>
+</templates>

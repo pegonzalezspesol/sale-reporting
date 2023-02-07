@@ -34,7 +34,7 @@
             />
     </xpath>
     <xpath
-            expr="//tbody[hasclass('sale_tbody')]//tr[hasclass('is-subtotal', 'text-right')]"
+            expr="//tbody[hasclass('sale_tbody')]//tr[hasclass('is-subtotal', 'text-end')]"
             position="attributes"
         >
       <attribute
@@ -44,19 +44,19 @@
             />
     </xpath>
     <xpath
-            expr="//tbody[hasclass('sale_tbody')]//tr[hasclass('is-subtotal', 'text-right')]/td/strong"
+            expr="//tbody[hasclass('sale_tbody')]//tr[hasclass('is-subtotal', 'text-end')]/td/strong"
             position="attributes"
         >
       <attribute name="class" add="d-none" separator=" " />
     </xpath>
     <xpath
-            expr="//tbody[hasclass('sale_tbody')]//tr[hasclass('is-subtotal', 'text-right')]/td/strong"
+            expr="//tbody[hasclass('sale_tbody')]//tr[hasclass('is-subtotal', 'text-end')]/td/strong"
             position="after"
         >
       <strong class="mr16">Subtotal <span t-field="current_section.name" /></strong>
     </xpath>
     <xpath
-            expr="//tbody[hasclass('sale_tbody')]//tr[hasclass('is-subtotal', 'text-right')]"
+            expr="//tbody[hasclass('sale_tbody')]//tr[hasclass('is-subtotal', 'text-end')]"
             position="after"
         >
       <t t-if="not current_section.show_details">
@@ -99,7 +99,7 @@
             />
       </xpath>
       <xpath
-            expr="//t[@t-foreach='sale_order.order_line']//span[contains(@t-esc, 'line.tax_id')]"
+            expr="//t[@t-foreach='lines_to_report']//span[contains(@t-out, 'line.tax_id')]"
             position="attributes"
         >
         <attribute
